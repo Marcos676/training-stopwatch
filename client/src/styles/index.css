@@ -1,0 +1,43 @@
+/* Importa tailwindcss */
+@import "tailwindcss";
+
+/* Se puede crear estilos globales con el pseudo-elemento :root */
+/* :root {
+   Variables Globales ejemplo de creacion:
+   --text: #6b6375; 
+   Ejemplo de uso:
+   color: var(--text); 
+
+   Ejemplo de media query 
+   @media (max-width: 1024px) {
+    font-size: 16px;
+  } 
+} */
+/* Modo oscuro segun preferencias del usuario (saca el valor del sistema o preferencias del usuario en el navegador) */
+/* Cambia el valor de la variable */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+  }
+}
+*/
+
+/* ------------------- */
+
+/* Evaluar que reutilizar */
+/* #root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+} */
+
+/* Evaluar que reutilizar */
+/* body {
+  margin: 0;
+} */

@@ -1,0 +1,54 @@
+/* .counter {
+  font-size: 16px;
+
+  "&:hover" establece que cuando el usuario pase el cursor sobre el elemento con la clase "counter", se aplicarán los estilos definidos dentro de este bloque. En este caso, se cambiará el color del borde a var(--accent-border) para proporcionar una retroalimentación visual al usuario.
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  "&:focus-visible" se refiere a un estado específico de enfoque que es visible para el usuario. Esto es especialmente útil para mejorar la accesibilidad, ya que permite a los usuarios que navegan con el teclado identificar claramente qué elemento está enfocado. En este caso, cuando un elemento con la clase "counter" recibe el enfoque y es visible, se aplicarán los estilos definidos dentro de este bloque. Se establecerá un contorno de 2 píxeles de ancho con el color var(--accent) y un desplazamiento de contorno de 2 píxeles para mejorar la visibilidad del enfoque.
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+} */
+
+/* .hero {
+  position: relative;
+
+  ".base", ".framework" y ".vite" son clases que se aplican a elementos dentro del contenedor con la clase "hero". Estas clases se utilizan para posicionar y estilizar los elementos de manera específica dentro del contenedor. En este caso, se establece que los elementos con estas clases tendrán un margen horizontal automático (margin: 0 auto) para centrar su contenido dentro del contenedor. Además, se establece que el borde izquierdo y derecho de estos elementos estarán alineados con el borde izquierdo y derecho del contenedor (inset-inline: 0), lo que significa que ocuparán todo el ancho disponible dentro del contenedor. Esto es útil para garantizar que los elementos se centren correctamente dentro del contenedor, independientemente del tamaño de la pantalla o del contenedor.
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+ } */
+
+/* #next-steps {
+  display: flex;
+  border-top: 1px solid var(--border);
+  text-align: left;
+
+  "& > div" se refiere a los elementos hijos directos del contenedor con la clase "next-steps". Esto significa que los estilos definidos dentro de este bloque se aplicarán a cada uno de los elementos que son hijos directos de "next-steps". En este caso, se establece que cada uno de estos elementos tendrá una propiedad flex de 1 1 0, lo que significa que podrán crecer y encogerse según sea necesario para ocupar el espacio disponible dentro del contenedor. Además, se establece un relleno (padding) de 32 píxeles en todos los lados para proporcionar espacio alrededor del contenido dentro de cada uno de estos elementos. Esto ayuda a mejorar la legibilidad y la apariencia general del diseño. Además, se incluye una media query para ajustar el relleno en pantallas más pequeñas, estableciendo un relleno de 24 píxeles en la parte superior e inferior y 20 píxeles en los lados para mejorar la adaptabilidad del diseño en dispositivos móviles.
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  } 
+} */
+
+/* .ticks {
+  position: relative;
+  width: 100%;
+
+  "&: :before" y "&: :after" se refieren a los pseudo-elementos ::before y ::after del contenedor con la clase "ticks". Estos pseudo-elementos se utilizan para crear elementos adicionales que no están presentes en el HTML pero que pueden ser estilizados con CSS. En este caso, se establece que ambos pseudo-elementos tendrán un contenido vacío (content: '') y una posición absoluta (position: absolute) para posicionarlos en relación con el contenedor principal. Se establece que estarán ubicados a 4.5 píxeles por encima del borde superior del contenedor (top: -4.5px) y tendrán un borde de 5 píxeles de ancho con un color transparente (border: 5px solid transparent). Esto crea un efecto visual de "ticks" o marcas alrededor del contenedor. Luego, se especifica que el pseudo-elemento ::before tendrá un borde izquierdo de color var(--border) y el pseudo-elemento ::after tendrá un borde derecho de color var(--border), lo que completa el diseño de las marcas alrededor del contenedor.
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+ */
